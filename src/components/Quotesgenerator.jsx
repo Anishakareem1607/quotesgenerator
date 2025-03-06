@@ -44,6 +44,9 @@ console.log(quotes)
   return (
     <>
     <h2 style={{textAlign:'center',color:'whitesmoke',marginTop:'150px' }} >Quote Generator</h2>
+    <div>
+      
+    </div>
     <div style={{display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'center' }}>
       <div>
         <h3 className='quotes mt-5'>"{quotes.quote}"</h3>
@@ -53,17 +56,17 @@ console.log(quotes)
     </div>
     <div className='d-flex justify-content-center align-items-center'>
       <button className='btn btn-success rounded ' style={{width:'150px',fontSize:'15px',height:'50px',marginTop:'50px'}} onClick={fetchdata} > Give me an advice</button>
-      
-
-    </div>
-    {quotes.author && (
-                            <img style={{width:'200px',height:'200px',marginLeft:'43%',borderRadius:'6px'}}
+      {quotes.author && (
+                            <img 
                                 src={authorImages[quotes.author] || "https://via.placeholder.com/100"}
                                 alt={quotes.author}
-                                className="image mt-4"
+                                className="image mt-4 "
                                  
                             />
                         )}
+
+    </div>
+   
       
     </>
 

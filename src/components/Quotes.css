@@ -7,3 +7,52 @@
     font-size: 20px;
     margin-left:80%;
 }
+.image{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+
+
+/* Media query */
+
+@media (max-width:500px){
+   
+    h3{
+        font-size: 15px !important;
+    }
+    button{
+        width: 120px !important;
+        font-size: 12px !important;
+    }
+    .image{
+        width: 150px;
+        height: 150px;
+        margin-left: 50px;
+    }
+    h2{
+        margin-top: 50px !important;
+    }
+}
+
+@media (min-width:500px) and (max-width:992px){
+    h3{
+        font-size: 18px !important;
+    }
+    button{
+        width: 135px !important;
+        font-size: 15px !important;
+    }
+    .image{
+        width: 175px;
+        height: 175px;
+        margin-left: 70px;
+    }
+    h2{
+        margin-top: 100px !important;
+    }
+}
