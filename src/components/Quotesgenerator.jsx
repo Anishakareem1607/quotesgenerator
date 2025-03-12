@@ -44,9 +44,8 @@ console.log(quotes)
   return (
     <>
     <h2 style={{textAlign:'center',color:'whitesmoke',marginTop:'150px' }} >Quote Generator</h2>
-    <div>
-      
-    </div>
+    <div className=' w-75 d-block mx-auto maindiv'>
+   
     <div style={{display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'center' }}>
       <div>
         <h3 className='quotes mt-5'>"{quotes.quote}"</h3>
@@ -64,7 +63,7 @@ console.log(quotes)
                                  
                             />
                         )}
-
+        </div>
     </div>
    
       
